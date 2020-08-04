@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'SwiftyContacts'
- s.version = '3.0.13'
+ s.version = '3.0.16'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'A Swift library for Contacts framework.'
  s.homepage = 'https://github.com/satishbabariya/SwiftyContacts'
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
  s.subspec "RxSwift" do |ss|
     ss.source_files = "Sources/RxSwift/*.swift"
     ss.framework  = "Foundation" ,"Contacts"
-    ss.dependency "RxSwift", "~> 4.0"
+    ss.dependency "RxSwift"
  end
 
 end
